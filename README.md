@@ -14,7 +14,7 @@ Before proceeding, ensure you have the following installed on your system:
 If this is your first time setting up the project, start by cloning the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/mikey18/GasChek-client-app
 ```
 
 Navigate to the project directory:
