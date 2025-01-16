@@ -1,0 +1,82 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+
+.light-mode {
+    background-color: var(--app-color-lightmode);
+    /* color: var(--app-color2); */
+}
+
+.light-mode::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.light-mode::-webkit-scrollbar-track {
+    background-color: var(--app-color-lightmode);
+}
+
+.light-mode::-webkit-scrollbar-thumb {
+    background-color: #888888;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+.light-mode::-webkit-scrollbar-thumb:hover {
+    background-color: #5e5e5e;
+    border: 1px solid transparent;
+}
+
+.dark-mode {
+    background-color: var(--app-color-darkmode);
+    /* color: var(--app-color-lightmode); */
+}
+
+.dark-mode::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.dark-mode::-webkit-scrollbar-track {
+    background-color: var(--app-color-darkmode);
+}
+
+.dark-mode::-webkit-scrollbar-thumb {
+    background-color: #888888;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+.dark-mode::-webkit-scrollbar-thumb:hover {
+    background-color: #5e5e5e;
+    border: 1px solid transparent;
+}
+
+.splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 450px) {
+    .center {
+        zoom: 0.7;
+    }
+}
